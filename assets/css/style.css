@@ -638,3 +638,35 @@ color: #000000;
   border-color: #FE9696;
 }
 
+.footer-list {width: 100%;}
+
+.footer-list-title {
+  color: #000000;
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  position: relative;
+  color: inherit;
+  padding-block: 5px;
+}
+
+.footer-link:is(:hover, :focus){
+  color: #FE9696;
+  transform: translateX(15px);
+}
+
+.footer-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%) scale(var(--scale, 0));
+  transform: var(--sonic-silver);
+  width: 10px;
+  height: 2px;
+  transition: var(--transition-1);
+}
+
