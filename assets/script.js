@@ -9,11 +9,10 @@ const navElemArr = [overlay, navOpenBtn, navCloseBtn];
 
 // Display current date
 const currentDate = new Date();
-const currentDateElement = document.getElementById('currentDate');
 
-const day = String(currentDate.getDate()).padStart(2, '0');
-const month = String(currentDate.getMonth() + 1).padStart(2, '0');
-const year = currentDate.getFullYear();
+document.getElementById('currentDate1').textContent = currentDate.toLocaleDateString();
+document.getElementById('currentDate2').textContent = currentDate.toLocaleDateString();
+document.getElementById('currentDate3').textContent = currentDate.toLocaleDateString();
 
 currentDateElement.textContent = `${day}/${month}/${year}`;
 
