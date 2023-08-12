@@ -449,4 +449,41 @@ margin-bottom: 20px;
   height: 45px;
 }
 
+.product-card .card-action-btn {
+border: 1px solid var(--cultured);
+width: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 8px;
+background: #ffffff;
+color: #000000;
+}
 
+.product-card .card-action-btn:is(:hover, :focus) {border-color: #000000;}
+
+.product-card .cart-btn {
+  flex-grow: 1;
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.product-card .card-action-btn ion-icon { font-size: 20px;}
+
+.product-card .card-title { margin-bottom: 5px;}
+
+.product-card .card-price {
+  color: #000000;
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+}
+
+.product-card .card-price data:not(:first-child) {
+  color: #7c7c7c;
+  margin-left: 5px;
+  /* ขีดฆ่าข้อความ */
+  text-decoration: line-through;
+}
+
+.product .btn { margin-inline: auto;}
