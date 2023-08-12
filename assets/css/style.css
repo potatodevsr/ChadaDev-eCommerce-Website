@@ -600,21 +600,20 @@ color: #000000;
   padding-block: var(--section-padding);
 }
 
-.footer-top .container{
+.footer-top .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px;
 }
 
-.footer .logo { margin-bottom: 20px;}
+.footer .logo { margin-bottom: 20px; }
 
 .footer-text {
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
-/* social */
 .social-list {
   display: flex;
   justify-content: flex-start;
@@ -623,8 +622,8 @@ color: #000000;
 }
 
 .social-link {
-  color: #000000;
-  font-size: 20px;
+  color: var(--eerie-black);
+  font-size: 18px;
   width: 35px;
   height: 35px;
   border: 1px solid var(--sonic-silver);
@@ -632,16 +631,17 @@ color: #000000;
   place-items: center;
   border-radius: 50%;
 }
+
 .social-link:is(:hover, :focus) {
-  background: #FE9696;
-  color: #ffffff;
-  border-color: #FE9696;
+  background: var(--eerie-black);
+  color: var(--white);
+  border-color: var(--eerie-black);
 }
 
-.footer-list {width: 100%;}
+.footer-list { width: 100%; }
 
 .footer-list-title {
-  color: #000000;
+  color: var(--eerie-black);
   font-size: var(--fs-5);
   font-weight: var(--fw-600);
   margin-bottom: 15px;
@@ -653,8 +653,8 @@ color: #000000;
   padding-block: 5px;
 }
 
-.footer-link:is(:hover, :focus){
-  color: #FE9696;
+.footer-link:is(:hover, :focus) {
+  color: var(--eerie-black);
   transform: translateX(15px);
 }
 
@@ -664,7 +664,8 @@ color: #000000;
   top: 50%;
   left: -15px;
   transform: translateY(-50%) scale(var(--scale, 0));
-  transform: var(--sonic-silver);
+  transform-origin: right;
+  background: var(--sonic-silver);
   width: 10px;
   height: 2px;
   transition: var(--transition-1);
@@ -672,7 +673,37 @@ color: #000000;
 
 .footer-link:is(:hover, :focus)::before { --scale: 1; }
 
-.footer-bottom {padding-block: 20px;}
+.footer-bottom { padding-block: 20px; }
 
-.footer-buttom a {color: inherit;}
+.footer-bottom a { color: inherit; }
 
+/* copyright */
+.copyright {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.copyright a {
+  display: inline-block;
+  color: var(--eerie-black);
+  font-weight: var(--fw-600);
+}
+
+.footer-bottom-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px 15px;
+  margin-bottom: 15px;
+}
+
+.footer-bottom-link:is(:hover, :focus) { color: var(--eerie-black); }
+
+.payment {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
