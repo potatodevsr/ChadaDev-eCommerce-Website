@@ -77,7 +77,7 @@ ion-icon { pointer-events: none;}
 
 html{
     font-family: var(--ff-jost);
-    color:#5f5959;
+    color:#5c595f;
     scroll-behavior: smooth;
 }
 
@@ -593,3 +593,48 @@ color: #000000;
 }
 
 .newsletter-card .btn {gap: 10px;}
+
+/* footer text*/
+.footer-top {
+  background: var(--cultured);
+  padding-block: var(--section-padding);
+}
+
+.footer-top .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer .logo { margin-bottom: 20px;}
+
+.footer-text {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* social */
+.social-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-link {
+  color: #000000;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--sonic-silver);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+.social-link:is(:hover, :focus) {
+  background: #FE9696;
+  color: #ffffff;
+  border-color: #FE9696;
+}
+
