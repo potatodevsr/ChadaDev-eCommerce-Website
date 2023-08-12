@@ -96,7 +96,7 @@ h3 > a { color: inherit; }
 .h2,
 .h3,
 .h4 {
-    color: var(--eerie-black);
+    color: #000000;
     font-weight: var(--fw-600);
 }
 
@@ -241,14 +241,14 @@ h3 > a { color: inherit; }
     position: absolute;
     top: -5px;
     right: 0;
-    background: var(--background, var(--eerie-black));
+    background:#F3C3C3;
     width: 20px;
     height: 20px;
     display: grid;
     place-items: center;
     line-height: 0;
     font-size: 13px;
-    color: var(--white);
+    color: #f7f7f7;
     border-radius: 50%;
   }
   .header-action-btn .btn-badge.green { --background: var(--middle-blue-green); }
@@ -313,7 +313,7 @@ h3 > a { color: inherit; }
 .hero .container { width: 100%;}
 
 .hero-subtitle {
-  color: var(--eerie-black);
+  color: #000000;
   font-size: var(--fs-4);
   font-weight: var(--fw-600);
   margin-bottom: 20px;
