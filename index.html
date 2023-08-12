@@ -906,26 +906,28 @@
           <div class="newsletter-card" style="background-image: url('./assets/images/newsletter-bg.png');">
             <h2 class="card-title">Subscribe Newsletter</h2>
             <p class="card-text">
-              "Be the First to Know! Enter your email below to stay updated on new collections and product launches at Chada Fashion."            </p>
+              "Be the First to Know! Enter your email below to stay updated on new collections and product launches at Chada Fashion."
+            </p>
             <form action="" class="card-form">
-
+      
               <div class="input-wrapper">
                 <ion-icon name="mail-outline"></ion-icon>
-
-                <input type="email" name="email" placeholder="Enter your email" required class="input-field">
+      
+                <input type="email" name="email" placeholder="Enter your email" required class="input-field"
+                       oninvalid="this.setCustomValidity('Please enter a valid email address')"
+                       oninput="this.setCustomValidity('')">
               </div>
-
+      
               <button type="submit" class="btn btn-primary w-100">
                 <span>Subscribe</span>
-
                 <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
               </button>
-
+      
             </form>
           </div>
         </div>
       </section>
-
+      
     </article>
   </main>
 <!-- end main -->
